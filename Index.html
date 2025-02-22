@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banca de Jogos Online</title>
+  <style>
+    /* Estilos gerais */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding-bottom: 15px;
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .card h2 {
+      margin: 15px 0 10px 0;
+      font-size: 1.2em;
+    }
+    .card button {
+      background-color: #28a745;
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .card button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Banca de Jogos Online</h1>
+  </header>
+  <div class="container">
+    <!-- Card para o jogo Tigrinho -->
+    <div class="card">
+      <img src="https://via.placeholder.com/250x150?text=Tigrinho" alt="Tigrinho">
+      <h2>Tigrinho</h2>
+      <button onclick="jogar('Tigrinho')">Jogar</button>
+    </div>
+    <!-- Card para o jogo Coelho -->
+    <div class="card">
+      <img src="https://via.placeholder.com/250x150?text=Coelho" alt="Coelho">
+      <h2>Coelho</h2>
+      <button onclick="jogar('Coelho')">Jogar</button>
+    </div>
+    <!-- Card para outro jogo -->
+    <div class="card">
+      <img src="https://via.placeholder.com/250x150?text=Outro+Jogo" alt="Outro Jogo">
+      <h2>Outro Jogo</h2>
+      <button onclick="jogar('Outro Jogo')">Jogar</button>
+    </div>
+  </div>
+
+  <script>
+    function jogar(jogo) {
+      // Exemplo de ação ao clicar no botão "Jogar"
+      alert("Abrindo o jogo: " + jogo);
+      // Para redirecionar para uma página específica, descomente a linha abaixo e ajuste conforme necessário:
+      // window.location.href = jogo.toLowerCase().replace(" ", "-") + ".html";
+    }
+  </script>
+</body>
+</html>
